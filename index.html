@@ -190,6 +190,39 @@ padding:30px;
 margin-top:50px;
 }
 
+#topBtn{
+display:none;
+position:fixed;
+bottom:20px;
+left:20px;
+z-index:999;
+background:#0d47a1;
+color:white;
+border:none;
+padding:15px 18px;
+border-radius:50%;
+font-size:20px;
+cursor:pointer;
+box-shadow:0 4px 10px rgba(0,0,0,.3);
+transition:.3s;
+}
+
+#topBtn:hover{
+background:#ff9800;
+transform:scale(1.1);
+}
+
+.fade{
+opacity:0;
+transform:translateY(50px);
+transition:all .8s ease;
+}
+
+.fade.show{
+opacity:1;
+transform:translateY(0);
+} 
+ 
 </style>
 
 </head>
@@ -247,7 +280,7 @@ margin-top:50px;
 
 </section>
 
-<section class="section">
+<section class="section fade">
 
 <h2>Why Choose RK Enterprises?</h2>
 
@@ -288,7 +321,7 @@ margin-top:50px;
 </div>
 
 </section>
- <section class="section" id="products">
+ <section class="section fade" id="products">
 
 <h2>Our Products</h2>
 
@@ -387,7 +420,7 @@ and Electrical Items.
 
 </section>
 
-<section class="section" id="gallery">
+<section class="section fade" id="gallery">
 
 <h2>📸 Our Gallery</h2>
 
@@ -448,7 +481,7 @@ and Electrical Items.
 
 </section>
 
-<section class="section" id="contact">
+<section class="section fade" id="contact">
 
 <h2>📞 Contact Us</h2>
 
