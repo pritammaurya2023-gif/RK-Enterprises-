@@ -568,6 +568,46 @@ current=(current+1)%slides.length;
 slides[current].classList.add("active");
 },4000);
 </script>
+
+<script>
+// ===== Hero Slider =====
+const slides = document.querySelectorAll(".slider img");
+let current = 0;
+
+setInterval(() => {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+}, 4000);
+
+// ===== Scroll To Top Button =====
+const topBtn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 300) {
+        topBtn.style.display = "block";
+    } else {
+        topBtn.style.display = "none";
+    }
+
+    document.querySelectorAll(".fade").forEach((el) => {
+        const top = el.getBoundingClientRect().top;
+
+        if (top < window.innerHeight - 100) {
+            el.classList.add("show");
+        }
+    });
+
+});
+
+topBtn.addEventListener("click", function () {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+</script> 
  
 </body>
 
