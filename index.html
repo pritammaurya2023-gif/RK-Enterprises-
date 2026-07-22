@@ -1,229 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RK Enterprises | Electrical & Electronics Store</title>
 
-<style>
+<title>RK Enterprises | Electrical, Electronics & Solar Store</title>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
-}
+<meta name="description" content="RK Enterprises - Electrical, Electronics, Solar Products, Furniture, AC, Cooler, Refrigerator and Home Appliances in Kanaila, Azamgarh.">
 
-body{
-background:#f5f5f5;
-color:#333;
-line-height:1.6;
-}
-
-header{
-background:#0d47a1;
-color:#fff;
-padding:15px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-flex-wrap:wrap;
-}
-
-.logo{
-display:flex;
-align-items:center;
-gap:15px;
-}
-
-.logo img{
-width:70px;
-height:70px;
-border-radius:50%;
-background:white;
-padding:5px;
-}
-
-.logo h1{
-font-size:30px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin:12px;
-font-weight:bold;
-}
-
-nav a:hover{
-color:#FFD54F;
-}
-
-.hero{
-background:url("./images/shop-front.jpg") center center/cover no-repeat;
-height:90vh;
-display:flex;
-justify-content:center;
-align-items:center;
-position:relative;
-text-align:center;
-}
-
-.hero::before{
-content:"";
-position:absolute;
-top:0;
-left:0;
-width:100%;
-height:100%;
-background:rgba(0,0,0,.55);
-}
-
-.hero-content{
-position:relative;
-z-index:2;
-color:white;
-max-width:700px;
-}
-
-.hero-content h2{
-font-size:48px;
-margin-bottom:20px;
-}
-
-.hero-content p{
-font-size:22px;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 30px;
-background:#ff9800;
-color:white;
-text-decoration:none;
-border-radius:40px;
-margin:10px;
-font-weight:bold;
-}
-
-.btn:hover{
-background:#e68900;
-}
-
-.section{
-padding:70px 20px;
-max-width:1200px;
-margin:auto;
-}
-
-.section h2{
-text-align:center;
-margin-bottom:40px;
-color:#0d47a1;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-gap:25px;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:12px;
-box-shadow:0 5px 20px rgba(0,0,0,.12);
-text-align:center;
-transition:.3s;
-}
-
-.card:hover{
-transform:translateY(-8px);
-}
-
-.card img{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:10px;
-margin-bottom:15px;
-}
-
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
-text-decoration:none;
-color:white;
-}
-
-.call{
-position:fixed;
-bottom:90px;
-right:20px;
-background:#1565c0;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:26px;
-text-decoration:none;
-color:white;
-}
-
-footer{
-background:#0d47a1;
-color:white;
-text-align:center;
-padding:30px;
-margin-top:50px;
-}
-
-#topBtn{
-display:none;
-position:fixed;
-bottom:20px;
-left:20px;
-z-index:999;
-background:#0d47a1;
-color:white;
-border:none;
-padding:15px 18px;
-border-radius:50%;
-font-size:20px;
-cursor:pointer;
-box-shadow:0 4px 10px rgba(0,0,0,.3);
-transition:.3s;
-}
-
-#topBtn:hover{
-background:#ff9800;
-transform:scale(1.1);
-}
-
-.fade{
-opacity:0;
-transform:translateY(50px);
-transition:all .8s ease;
-}
-
-.fade.show{
-opacity:1;
-transform:translateY(0);
-} 
- 
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -231,15 +17,17 @@ transform:translateY(0);
 
 <header>
 
+<div class="container">
+
 <div class="logo">
 
-<img src="./images/logo.png" alt="RK Enterprises">
+<img src="images/logo.png" alt="RK Enterprises Logo">
 
 <div>
 
-<h1>RK ENTERPRISES</h1>
+<h1>RK Enterprises</h1>
 
-<p>Electrical • Electronics • Home Appliances</p>
+<p>Electrical • Electronics • Solar • Home Appliances</p>
 
 </div>
 
@@ -247,7 +35,7 @@ transform:translateY(0);
 
 <nav>
 
-<a href="#">Home</a>
+<a href="#home">Home</a>
 
 <a href="#products">Products</a>
 
@@ -257,358 +45,58 @@ transform:translateY(0);
 
 </nav>
 
+</div>
+
 </header>
 
-<section class="hero">
- <div class="slider">
-<img src="./images/shop-front.jpg" class="active">
-<img src="./images/shop-interior.jpg">
-<img src="./images/logo.png">
- </div>
+<section class="hero" id="home">
+
+<div class="slider">
+
+<img src="images/shop-front.jpg" class="active" alt="Shop Front">
+
+<img src="images/shop-interior.jpg" alt="Shop Interior">
+
+</div>
+
+<div class="overlay"></div>
 
 <div class="hero-content">
 
 <h2>Welcome to RK Enterprises</h2>
 
-<p>Your Trusted Electrical & Electronics Store in Chakrapanpur</p>
+<p>Your Trusted Electrical, Electronics & Solar Store in Kanaila, Azamgarh</p>
 
 <a href="tel:9721759680" class="btn">📞 Call Now</a>
 
-<a href="https://wa.me/919369496818" class="btn">💬 WhatsApp</a>
+<a href="https://wa.me/919369496818" class="btn" target="_blank">💬 WhatsApp</a>
 
 </div>
 
 </section>
 
-<section class="section fade">
-
-<h2>Why Choose RK Enterprises?</h2>
-
-<div class="products">
-
-<div class="card">
-
-<h3>🏆 Genuine Products</h3>
-
-<p>Original branded electrical & electronics products.</p>
-
-</div>
-
-<div class="card">
-
-<h3>💰 Best Price</h3>
-
-<p>Affordable prices with festival offers.</p>
-
-</div>
-
-<div class="card">
-
-<h3>🛠 Installation Support</h3>
-
-<p>Professional installation & after-sales service.</p>
-
-</div>
-
-<div class="card">
-
-<h3>🚚 Fast Delivery</h3>
-
-<p>Quick delivery in nearby areas.</p>
-
-</div>
-
-</div>
-
-</section>
- <section class="section fade" id="products">
+<section class="section" id="products">
 
 <h2>Our Products</h2>
 
-<div class="products">
+<div class="grid">
 
-<div class="card">
-<h3>💡 LED Lights</h3>
-<p>Premium LED Bulbs, Battens & Panels</p>
-</div>
+<div class="card">💡 LED Lights</div>
 
-<div class="card">
-<h3>🌪️ Fans</h3>
-<p>Ceiling, Wall & Exhaust Fans</p>
-</div>
+<div class="card">⚡ Switches & Wires</div>
 
-<div class="card">
-<h3>⚡ Switches & Wires</h3>
-<p>Electrical Accessories & Cables</p>
-</div>
+<div class="card">🌪️ Fans</div>
 
-<div class="card">
-<h3>❄️ Air Conditioners</h3>
-<p>Split & Window AC</p>
-</div>
+<div class="card">❄️ Air Conditioners</div>
 
-<div class="card">
-<h3>🌬️ Air Coolers</h3>
-<p>Desert & Personal Coolers</p>
-</div>
+<div class="card">🧊 Refrigerators</div>
 
-<div class="card">
-<h3>🧊 Refrigerators</h3>
-<p>Single & Double Door</p>
-</div>
+<div class="card">🌬️ Air Coolers</div>
 
-<div class="card">
-<h3>📺 Televisions</h3>
-<p>Smart LED TVs</p>
-</div>
+<div class="card">☀️ Solar Products</div>
 
-<div class="card">
-<h3>☀️ Solar Products</h3>
-<p>Panels, Inverters & Batteries</p>
-</div>
-
-<div class="card">
-<h3>🪑 Furniture</h3>
-<p>Steel Almirah & Home Furniture</p>
-</div>
+<div class="card">🪑 Furniture</div>
 
 </div>
 
 </section>
-
-<section class="section">
-
-<h2>Our Brands</h2>
-
-<div class="products">
-
-<div class="card">LG</div>
-<div class="card">Samsung</div>
-<div class="card">Philips</div>
-<div class="card">Voltas</div>
-<div class="card">Blue Star</div>
-<div class="card">Havells</div>
-<div class="card">Anchor</div>
-<div class="card">Luminous</div>
-<div class="card">Exide</div>
-<div class="card">Livguard</div>
-
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>🔥 Latest Offers</h2>
-
-<div class="card">
-
-<h3>Festival Offers Available</h3>
-
-<p>
-Special discounts on Air Conditioners,
-Coolers, Refrigerators,
-LED Lights, Solar Products
-and Electrical Items.
-</p>
-
-<a href="tel:9721759680" class="btn">
-📞 Call for Offer
-</a>
-
-</div>
-
-</section>
-
-<section class="section fade" id="gallery">
-
-<h2>📸 Our Gallery</h2>
-
-<div class="products">
-
-<div class="card">
-
-<img src="./images/shop-front.jpg" alt="Showroom">
-
-<h3>RK Enterprises Showroom</h3>
-
-</div>
-
-<div class="card">
- 
-<img src="./images/shop-interior.jpg" alt="Inside Store">
-
-<h3>Inside Store</h3>
-
-</div>
-
-<div class="card">
-
-<img src="./images/logo.png" alt="Logo">
-
-<h3>RK Enterprises</h3>
-
-</div>
-
-</div>
-
-</section> 
-<section class="section">
-
-<h2>⭐ Customer Reviews</h2>
-
-<div class="products">
-
-<div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>"Excellent service and genuine products."</p>
-<b>- Happy Customer</b>
-</div>
-
-<div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>"Best electrical & home appliance store in Chakrapanpur."</p>
-<b>- Happy Customer</b>
-</div>
-
-<div class="card">
-<h3>⭐⭐⭐⭐⭐</h3>
-<p>"Affordable prices and great customer support."</p>
-<b>- Happy Customer</b>
-</div>
-
-</div>
-
-</section>
-
-<section class="section fade" id="contact">
-
-<h2>📞 Contact Us</h2>
-
-<div class="card">
-
-<h3>RK Enterprises</h3>
-
-<p>
-📍 Opp. Bhagwan Adarsh College,<br>
-Kanaila, Azamgarh - 276128
-</p>
-
-<p>
-📞 Call :
-<a href="tel:9721759680">9721759680</a>
-</p>
-
-<p>
-💬 WhatsApp :
-<a href="https://wa.me/919369496818" target="_blank">
-9369496818
-</a>
-</p>
-
-<p>
-
-<a class="btn"
-href="https://maps.app.goo.gl/Cvf5FbGUXQFrU4mE6?g_st=ac"
-target="_blank">
-
-📍 Get Directions
-
-</a>
-
-</p>
-
-</div>
-
-</section>
-
-<footer>
-
-<h2>RK Enterprises</h2>
-
-<p>
-Electrical | Electronics | Solar Products |
-Furniture | Home Appliances
-</p>
-
-<br>
-
-<p>
-
-© 2026 RK Enterprises
-
-</p>
-
-</footer>
-
-<button id="topBtn">⬆</button>
-
-<a class="call"
-href="tel:9721759680">
-
-📞
-
-</a>
-
-<a class="whatsapp"
-href="https://wa.me/919369496818"
-target="_blank">
-
-💬
-
-</a>
- 
-<script>
-const slides=document.querySelectorAll(".slider img");
-let current=0;
-
-setInterval(()=>{
-slides[current].classList.remove("active");
-current=(current+1)%slides.length;
-slides[current].classList.add("active");
-},4000);
-</script>
-
-<script>
-// ===== Hero Slider =====
-const slides = document.querySelectorAll(".slider img");
-let current = 0;
-
-setInterval(() => {
-    slides[current].classList.remove("active");
-    current = (current + 1) % slides.length;
-    slides[current].classList.add("active");
-}, 4000);
-
-// ===== Scroll To Top Button =====
-const topBtn = document.getElementById("topBtn");
-
-window.addEventListener("scroll", function () {
-
-    if (window.scrollY > 300) {
-        topBtn.style.display = "block";
-    } else {
-        topBtn.style.display = "none";
-    }
-
-    document.querySelectorAll(".fade").forEach((el) => {
-        const top = el.getBoundingClientRect().top;
-
-        if (top < window.innerHeight - 100) {
-            el.classList.add("show");
-        }
-    });
-
-});
-
-topBtn.addEventListener("click", function () {
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-});
-</script> 
- 
-</body>
-
-</html>
