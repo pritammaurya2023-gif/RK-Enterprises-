@@ -50,3 +50,10 @@ if (topBtn) {
     });
 
 }
+
+const menuToggle=document.getElementById("menuToggle");
+const navbar=document.getElementById("navbar");
+
+menuToggle.onclick=function(){
+    navbar.classList.toggle("active");
+}
