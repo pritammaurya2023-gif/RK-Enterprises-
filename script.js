@@ -196,3 +196,52 @@ if (topBtn) {
     });
 
 }
+
+// ===== Animated Stats Counter =====
+
+const counters = document.querySelectorAll(".counter");
+
+const counterObserver = new IntersectionObserver((entries, observer) => {
+
+    entries.forEach((entry) => {
+
+        if (!entry.isIntersecting) return;
+
+        const counter = entry.target;
+        const target = Number(counter.dataset.target);
+
+        let current = 0;
+        const duration = 1800;
+        const increment = target / (duration / 20);
+
+        const updateCounter = () => {
+
+            current += increment;
+
+            if (current < target) {
+
+                counter.textContent = Math.floor(current);
+                requestAnimationFrame(updateCounter);
+
+            } else {
+
+                counter.textContent = target;
+
+            }
+
+        };
+
+        updateCounter();
+
+        observer.unobserve(counter);
+
+    });
+
+}, {
+    threshold: 0.5
+});
+
+
+counters.forEach((counter) => {
+    counterObserver.observe(counter);
+});
