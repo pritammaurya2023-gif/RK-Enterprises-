@@ -245,3 +245,109 @@ const counterObserver = new IntersectionObserver((entries, observer) => {
 counters.forEach((counter) => {
     counterObserver.observe(counter);
 });
+
+/* =================================
+   PREMIUM GALLERY LIGHTBOX
+================================= */
+
+const galleryItems = document.querySelectorAll(".gallery-item");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.getElementById("lightboxClose");
+const lightboxPrev = document.getElementById("lightboxPrev");
+const lightboxNext = document.getElementById("lightboxNext");
+
+let galleryIndex = 0;
+
+function openGallery(index){
+
+    galleryIndex = index;
+
+    const image = galleryItems[galleryIndex].querySelector("img");
+
+    lightboxImage.src = image.src;
+    lightboxImage.alt = image.alt;
+
+    lightbox.classList.add("active");
+
+    document.body.style.overflow = "hidden";
+}
+
+function closeGallery(){
+
+    lightbox.classList.remove("active");
+
+    document.body.style.overflow = "";
+}
+
+function nextGallery(){
+
+    galleryIndex++;
+
+    if(galleryIndex >= galleryItems.length){
+        galleryIndex = 0;
+    }
+
+    openGallery(galleryIndex);
+}
+
+function previousGallery(){
+
+    galleryIndex--;
+
+    if(galleryIndex < 0){
+        galleryIndex = galleryItems.length - 1;
+    }
+
+    openGallery(galleryIndex);
+}
+
+
+galleryItems.forEach((item,index)=>{
+
+    item.addEventListener("click",()=>{
+        openGallery(index);
+    });
+
+});
+
+
+lightboxClose.addEventListener("click",closeGallery);
+
+lightboxNext.addEventListener("click",nextGallery);
+
+lightboxPrev.addEventListener("click",previousGallery);
+
+
+/* Close by clicking outside image */
+
+lightbox.addEventListener("click",(e)=>{
+
+    if(e.target === lightbox){
+        closeGallery();
+    }
+
+});
+
+
+/* Keyboard */
+
+document.addEventListener("keydown",(e)=>{
+
+    if(!lightbox.classList.contains("active")){
+        return;
+    }
+
+    if(e.key === "Escape"){
+        closeGallery();
+    }
+
+    if(e.key === "ArrowRight"){
+        nextGallery();
+    }
+
+    if(e.key === "ArrowLeft"){
+        previousGallery();
+    }
+
+});
