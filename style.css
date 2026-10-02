@@ -876,3 +876,149 @@ section.stats-section{
     }
 
 }
+
+/* =================================
+   PREMIUM BRANDS SECTION
+================================= */
+
+.brands-section{
+    padding:90px 20px;
+    background:#f8f9fc;
+    overflow:hidden;
+}
+
+.brands-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.brands-heading span{
+    display:block;
+    color:#FFC107;
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:3px;
+    margin-bottom:10px;
+}
+
+.brands-heading h2{
+    font-size:42px;
+    color:#0D47A1;
+    margin-bottom:12px;
+}
+
+.brands-heading p{
+    color:#777;
+    font-size:16px;
+}
+
+.brands-wrapper{
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:22px;
+}
+
+.brand-card{
+    min-height:150px;
+    background:#fff;
+
+    border-radius:18px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.35s ease;
+
+    border:1px solid rgba(13,71,161,.06);
+}
+
+.brand-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(13,71,161,.18);
+}
+
+.brand-logo{
+    min-width:120px;
+    min-height:55px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:10px 15px;
+
+    border-radius:12px;
+
+    background:#f5f7fb;
+
+    color:#0D47A1;
+
+    font-size:20px;
+    font-weight:800;
+
+    letter-spacing:1px;
+
+    margin-bottom:12px;
+}
+
+.brand-card span{
+    color:#555;
+    font-size:14px;
+    font-weight:600;
+}
+
+
+/* Mobile */
+
+@media(max-width:900px){
+
+    .brands-wrapper{
+        grid-template-columns:repeat(3,1fr);
+    }
+
+}
+
+@media(max-width:600px){
+
+    .brands-section{
+        padding:70px 14px;
+    }
+
+    .brands-heading h2{
+        font-size:32px;
+    }
+
+    .brands-wrapper{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .brand-card{
+        min-height:125px;
+    }
+
+    .brand-logo{
+        min-width:100px;
+        font-size:16px;
+    }
+
+}
+
+@media(max-width:380px){
+
+    .brands-wrapper{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .brand-card{
+        min-height:115px;
+    }
+
+}
