@@ -1436,3 +1436,136 @@ section.stats-section{
         padding:18px;
     }
 }
+
+/* =================================
+   PREMIUM FOOTER
+================================= */
+
+.footer{
+    background:#0b1f3a;
+    color:#fff;
+    padding:65px 20px 0;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1.4fr 1fr 1fr 1.3fr;
+    gap:40px;
+    padding-bottom:50px;
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+    gap:11px;
+}
+
+.footer-about h2{
+    font-size:28px;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.footer-column h3{
+    font-size:18px;
+    margin-bottom:10px;
+    color:#FFC107;
+}
+
+.footer-column p{
+    color:#cbd5e1;
+    font-size:14px;
+    line-height:1.7;
+}
+
+.footer-column a{
+    color:#cbd5e1;
+    text-decoration:none;
+    font-size:14px;
+    transition:.3s ease;
+}
+
+.footer-column a:hover{
+    color:#FFC107;
+    transform:translateX(4px);
+}
+
+.footer-social{
+    display:flex;
+    gap:12px;
+    margin-top:15px;
+}
+
+.footer-social a{
+    width:42px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,.1);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:50%;
+    font-size:19px;
+    transition:.3s ease;
+}
+
+.footer-social a:hover{
+    background:#FFC107;
+    transform:translateY(-4px);
+}
+
+.footer-bottom{
+    max-width:1200px;
+    margin:auto;
+    padding:20px 0;
+    border-top:1px solid rgba(255,255,255,.12);
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.footer-bottom p{
+    color:#94a3b8;
+    font-size:13px;
+}
+
+@media(max-width:900px){
+
+    .footer-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:35px 25px;
+    }
+}
+
+@media(max-width:600px){
+
+    .footer{
+        padding:50px 20px 0;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr 1fr;
+        gap:30px 18px;
+    }
+
+    .footer-about{
+        grid-column:1 / -1;
+    }
+
+    .footer-column h3{
+        font-size:16px;
+    }
+
+    .footer-column a,
+    .footer-column p{
+        font-size:13px;
+    }
+
+    .footer-bottom{
+        flex-direction:column;
+        text-align:center;
+        gap:5px;
+    }
+}
