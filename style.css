@@ -1286,3 +1286,153 @@ section.stats-section{
     }
 
 }
+
+/* =================================
+   PREMIUM CONTACT SECTION
+================================= */
+
+.contact-section{
+    padding:90px 20px;
+    background:#f5f7fb;
+}
+
+.contact-heading{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.contact-heading span{
+    color:#FFC107;
+    font-size:13px;
+    font-weight:800;
+    letter-spacing:3px;
+}
+
+.contact-heading h2{
+    color:#0D47A1;
+    font-size:42px;
+    margin:10px 0;
+}
+
+.contact-heading p{
+    color:#777;
+    font-size:16px;
+}
+
+.contact-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1.2fr;
+    gap:30px;
+}
+
+.contact-info{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.contact-card{
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:22px;
+    background:#fff;
+    border-radius:16px;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.3s ease;
+}
+
+.contact-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 14px 30px rgba(0,0,0,.12);
+}
+
+.contact-icon{
+    width:55px;
+    height:55px;
+    flex-shrink:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#e8f0fe;
+    border-radius:50%;
+    font-size:25px;
+}
+
+.contact-card h3{
+    color:#222;
+    font-size:17px;
+    margin-bottom:5px;
+}
+
+.contact-card p,
+.contact-card a{
+    color:#666;
+    font-size:14px;
+    line-height:1.6;
+    text-decoration:none;
+}
+
+.contact-card a:hover{
+    color:#0D47A1;
+}
+
+.contact-direction-btn{
+    display:block;
+    text-align:center;
+    padding:16px;
+    background:#0D47A1;
+    color:#fff;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:700;
+    transition:.3s ease;
+}
+
+.contact-direction-btn:hover{
+    background:#FFC107;
+    color:#111;
+    transform:translateY(-3px);
+}
+
+.contact-map{
+    min-height:430px;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0 10px 35px rgba(0,0,0,.15);
+    background:#ddd;
+}
+
+.contact-map iframe{
+    width:100%;
+    height:100%;
+    min-height:430px;
+    border:0;
+}
+
+@media(max-width:768px){
+
+    .contact-section{
+        padding:70px 15px;
+    }
+
+    .contact-heading h2{
+        font-size:32px;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .contact-map,
+    .contact-map iframe{
+        min-height:350px;
+    }
+
+    .contact-card{
+        padding:18px;
+    }
+}
