@@ -468,37 +468,96 @@ LED Lights & Electrical Items.
 
 <section class="section" id="gallery">
 
-<h2>📸 Our Gallery</h2>
+<!-- ===== PREMIUM GALLERY ===== -->
 
-<div class="grid">
+<section class="gallery-section" id="gallery">
 
-<div class="card">
+    <div class="gallery-heading">
+        <span>OUR SHOWROOM</span>
+        <h2>Our Gallery</h2>
+        <p>A glimpse of RK Enterprises.</p>
+    </div>
 
-<img src="images/shop-front.jpg" alt="RK Enterprises Showroom">
+    <div class="gallery-grid">
 
-<h3>Our Showroom</h3>
+        <div class="gallery-item">
+            <img src="images/shop-front.jpg"
+                 alt="RK Enterprises Showroom"
+                 loading="lazy">
+            <div class="gallery-overlay">
+                <span>🏪 Showroom</span>
+            </div>
+        </div>
 
-</div>
+        <div class="gallery-item">
+            <img src="images/shop-interior.jpg"
+                 alt="RK Enterprises Interior"
+                 loading="lazy">
+            <div class="gallery-overlay">
+                <span>🏬 Store Interior</span>
+            </div>
+        </div>
 
-<div class="card">
+        <div class="gallery-item">
+            <img src="images/led.jpg"
+                 alt="LED Lights"
+                 loading="lazy">
+            <div class="gallery-overlay">
+                <span>💡 LED Lights</span>
+            </div>
+        </div>
 
-<img src="images/shop-interior.jpg" alt="Inside Store">
+        <div class="gallery-item">
+            <img src="images/fan.jpg"
+                 alt="Ceiling Fans"
+                 loading="lazy">
+            <div class="gallery-overlay">
+                <span>🌀 Ceiling Fans</span>
+            </div>
+        </div>
 
-<h3>Inside Store</h3>
+        <div class="gallery-item">
+            <img src="images/ac.png"
+                 alt="Air Conditioner"
+                 loading="lazy">
+            <div class="gallery-overlay">
+                <span>❄️ Air Conditioners</span>
+            </div>
+        </div>
 
-</div>
+        <div class="gallery-item">
+            <img src="images/cooler.jpg"
+                 alt="Air Cooler"
+                 loading="lazy">
+            <div class="gallery-overlay">
+                <span>🌬️ Air Coolers</span>
+            </div>
+        </div>
 
-<div class="card">
-
-<img src="images/logo.png" alt="RK Enterprises Logo">
-
-<h3>RK Enterprises</h3>
-
-</div>
-
-</div>
+    </div>
 
 </section>
+
+
+<!-- ===== LIGHTBOX ===== -->
+
+<div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="lightboxClose">
+        ×
+    </button>
+
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev">
+        ‹
+    </button>
+
+    <img id="lightboxImage" src="" alt="Gallery Preview">
+
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext">
+        ›
+    </button>
+
+</div>
 
 <!-- Customer Reviews -->
 
