@@ -15,7 +15,17 @@ if (menuToggle && navbar) {
     });
 
 }
+// ===== Close Mobile Menu After Clicking a Link =====
 
+if (navbar) {
+    const navLinks = navbar.querySelectorAll("a");
+
+    navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+            navbar.classList.remove("active");
+        });
+    });
+}
 
 // ===== Premium Hero Slider =====
 
