@@ -1569,3 +1569,82 @@ section.stats-section{
         gap:5px;
     }
 }
+
+/* =================================
+   MOBILE HEADER FIX
+================================= */
+
+@media (max-width: 768px){
+
+    .header .container{
+        padding:10px 15px;
+        flex-wrap:nowrap;
+    }
+
+    .logo{
+        display:flex;
+        align-items:center;
+        gap:8px;
+    }
+
+    .logo img{
+        width:42px;
+        height:42px;
+        object-fit:contain;
+    }
+
+    .logo-text h2{
+        font-size:17px;
+        margin:0;
+    }
+
+    .logo-text span{
+        font-size:9px;
+    }
+
+    /* Hamburger */
+    .menu-toggle{
+        display:flex !important;
+        align-items:center;
+        justify-content:center;
+        width:42px;
+        height:42px;
+        font-size:28px;
+        color:#fff;
+        cursor:pointer;
+        margin-left:auto;
+        z-index:10001;
+    }
+
+    /* Mobile Navigation */
+    #navbar{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#0D47A1;
+        flex-direction:column;
+        padding:10px 0;
+        box-shadow:0 10px 25px rgba(0,0,0,.2);
+    }
+
+    #navbar.active{
+        display:flex;
+    }
+
+    #navbar a{
+        display:block;
+        width:100%;
+        padding:14px 20px;
+        text-align:center;
+        color:#fff;
+        font-size:15px;
+        border-bottom:1px solid rgba(255,255,255,.12);
+    }
+
+    #navbar a:last-child{
+        border-bottom:none;
+    }
+
+}
