@@ -1798,3 +1798,85 @@ section.stats-section{
     }
 
 }
+
+/* =================================
+   FINAL MOBILE HEADER ALIGNMENT
+================================= */
+
+@media (max-width: 768px){
+
+    .header{
+        height:72px !important;
+        min-height:72px !important;
+    }
+
+    .header .container{
+        position:relative !important;
+        width:100% !important;
+        height:72px !important;
+        min-height:72px !important;
+        padding:8px 15px !important;
+        display:flex !important;
+        flex-direction:row !important;
+        flex-wrap:nowrap !important;
+        align-items:center !important;
+        justify-content:flex-start !important;
+    }
+
+    .logo{
+        width:auto !important;
+        height:56px !important;
+        margin:0 !important;
+        padding:0 !important;
+        display:flex !important;
+        align-items:center !important;
+        justify-content:flex-start !important;
+        flex:0 1 auto !important;
+    }
+
+    .logo img{
+        width:48px !important;
+        height:48px !important;
+        flex-shrink:0 !important;
+    }
+
+    .logo-text{
+        margin:0 !important;
+        padding:0 !important;
+    }
+
+    .logo-text h2{
+        font-size:19px !important;
+        line-height:1.1 !important;
+        margin:0 0 3px 0 !important;
+    }
+
+    .logo-text span{
+        font-size:9px !important;
+        line-height:1 !important;
+    }
+
+    .menu-toggle{
+        position:absolute !important;
+        right:15px !important;
+        top:15px !important;
+        width:42px !important;
+        height:42px !important;
+        margin:0 !important;
+        padding:0 !important;
+        display:flex !important;
+        align-items:center !important;
+        justify-content:center !important;
+        font-size:30px !important;
+        line-height:1 !important;
+    }
+
+    #navbar{
+        top:72px !important;
+    }
+
+    .hero{
+        margin-top:72px !important;
+    }
+
+}
