@@ -1,1 +1,4 @@
+User-agent: *
+Allow: /
 
+Sitemap: https://pritammaurya2023-gif.github.io/RK-Enterprises-/sitemap.xml
